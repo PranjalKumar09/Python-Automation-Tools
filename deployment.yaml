@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: Deployment
+metadata:
+  name: python-automation-tools
+  labels:
+    app: python-automation-tools
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: python-automation-tools
+  template:
+    metadata:
+      labels:
+        app: python-automation-tools
+    spec:
+      containers:
+      - name: python-automation-tools
+        image: pranjalkumar09/python-automation-tools/general:latest
+        imagePullPolicy: Always
+        command: ["python", "File_manager.py"]
+        resources:
+          limits:
+            memory: "512Mi"
+            cpu: "500m"
