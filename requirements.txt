@@ -1,0 +1,2 @@
+pywhatkit==5.4
+speedtest_cli==2.1.3
