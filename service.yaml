@@ -1,0 +1,14 @@
+apiVersion: v1          
+kind: Service           Service
+metadata:
+  name: python-automation-service  
+spec:
+  selector:
+    app: python-automation-tools 
+  ports:
+    - protocol: TCP
+      port: 80           
+      targetPort: 5000     
+  type: ClusterIP         
+
+  
