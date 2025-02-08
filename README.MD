@@ -30,7 +30,7 @@ Here are some visuals showcasing the tools in action:
 
 ### 📥 Clone the Repository  
 ```sh
-git clone https://github.com/YOUR_USERNAME/Python-Automation-Tools.git
+git clone https://github.com/PranjalKumar09/Python-Automation-Tools.git
 cd Python-Automation-Tools
 ```
 
